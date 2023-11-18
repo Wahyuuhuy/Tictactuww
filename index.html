@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Twoe</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+
+    </style>
+    <img id="play" src="sound-waves.png" width="20">
+   <div class="wrapper">
+       <div class="container">
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+       </div>
+       <button id="restart">Ulangi</button>
+   </div>
+
+   <div class="popup hide">
+       <p id="message">Contoh Pesan</p>
+       <button id="new-game">Permainan Baru</button>
+   </div>
+   
+    <!-- Script -->
+    <script>
+        let play = document.getElementById("play");
+        function playMusic(){
+            let audio = new Audio("spectre.mp3");
+            audio.play()
+        }
+        play.addEventListener("click",playMusic);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
